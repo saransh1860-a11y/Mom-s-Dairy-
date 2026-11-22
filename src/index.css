@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+.font-serif-custom {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans-custom {
+  font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "Product": {
+      "description": "Mom's Dairy product catalogue item",
+      "properties": {
+        "id": { "type": "string", "maxLength": 100 },
+        "name": { "type": "string", "maxLength": 150 },
+        "hindiName": { "type": "string", "maxLength": 150 },
+        "category": { "type": "string", "maxLength": 50 },
+        "shortDesc": { "type": "string", "maxLength": 300 },
+        "fullDesc": { "type": "string", "maxLength": 1000 },
+        "image": { "type": "string", "maxLength": 500 },
+        "badge": { "type": "string", "maxLength": 50 },
+        "features": { "type": "array", "items": { "type": "string" } },
+        "packagingOptions": { "type": "array", "items": { "type": "string" } },
+        "isFeatured": { "type": "boolean" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    }
+  },
+  "firestore": {
+    "products": {
+      "schema": "Product",
+      "description": "Products managed by Mom's Dairy admin"
+    }
+  }
+}
